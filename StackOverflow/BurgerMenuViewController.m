@@ -182,7 +182,7 @@ CGFloat const kBurgerButtonHeight = 50.0;
         [strongSelf.burgerButton removeFromSuperview];
         [strongSelf.topViewController.view addSubview:strongSelf.burgerButton];
         
-        [UIView animateWithDuration:kTimeToSlideMenu animations:^{
+        [UIView animateWithDuration:kTimeToSlideMenu*2 animations:^{
             strongSelf.topViewController.view.center = strongSelf.view.center;
         } completion:^(BOOL finished) {
             [strongSelf.topViewController.view addGestureRecognizer:strongSelf.panRecognizer];

@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		707DDA3E1D5104B400F57408 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707DDA3D1D5104B400F57408 /* AFNetworking.framework */; };
+		707DDA401D51052B00F57408 /* AFNetworking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 707DDA3D1D5104B400F57408 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		707DDA431D510B6B00F57408 /* StackOverflowService.m in Sources */ = {isa = PBXBuildFile; fileRef = 707DDA421D510B6B00F57408 /* StackOverflowService.m */; };
+		707DDA471D511A9E00F57408 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 707DDA461D511A9E00F57408 /* Question.m */; };
+		707DDA4A1D511AE700F57408 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 707DDA491D511AE700F57408 /* User.m */; };
+		707DDA4D1D511EB400F57408 /* JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 707DDA4C1D511EB400F57408 /* JSONParser.m */; };
 		70989FBA1D4FAD200056A50F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70989FB91D4FAD200056A50F /* main.m */; };
 		70989FBD1D4FAD200056A50F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70989FBC1D4FAD200056A50F /* AppDelegate.m */; };
-		70989FC01D4FAD200056A50F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70989FBF1D4FAD200056A50F /* ViewController.m */; };
 		70989FC31D4FAD200056A50F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70989FC11D4FAD200056A50F /* Main.storyboard */; };
 		70989FC51D4FAD200056A50F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70989FC41D4FAD200056A50F /* Assets.xcassets */; };
 		70989FC81D4FAD200056A50F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70989FC61D4FAD200056A50F /* LaunchScreen.storyboard */; };
@@ -39,13 +44,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		707DDA3F1D51051B00F57408 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				707DDA401D51052B00F57408 /* AFNetworking.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		707DDA3D1D5104B400F57408 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = StackOverflow/AFNetworking.framework; sourceTree = "<group>"; };
+		707DDA411D510B6B00F57408 /* StackOverflowService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackOverflowService.h; sourceTree = "<group>"; };
+		707DDA421D510B6B00F57408 /* StackOverflowService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOverflowService.m; sourceTree = "<group>"; };
+		707DDA451D511A9E00F57408 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		707DDA461D511A9E00F57408 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		707DDA481D511AE700F57408 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		707DDA491D511AE700F57408 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		707DDA4B1D511EB400F57408 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
+		707DDA4C1D511EB400F57408 /* JSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParser.m; sourceTree = "<group>"; };
 		70989FB51D4FAD200056A50F /* StackOverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70989FB91D4FAD200056A50F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70989FBB1D4FAD200056A50F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		70989FBC1D4FAD200056A50F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		70989FBE1D4FAD200056A50F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		70989FBF1D4FAD200056A50F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		70989FC21D4FAD200056A50F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70989FC41D4FAD200056A50F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70989FC71D4FAD200056A50F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				707DDA3E1D5104B400F57408 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,9 +119,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		707DDA441D511A7F00F57408 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				707DDA451D511A9E00F57408 /* Question.h */,
+				707DDA461D511A9E00F57408 /* Question.m */,
+				707DDA481D511AE700F57408 /* User.h */,
+				707DDA491D511AE700F57408 /* User.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		70989FAC1D4FAD200056A50F = {
 			isa = PBXGroup;
 			children = (
+				707DDA3D1D5104B400F57408 /* AFNetworking.framework */,
 				70989FB71D4FAD200056A50F /* StackOverflow */,
 				70989FD11D4FAD200056A50F /* StackOverflowTests */,
 				70989FDC1D4FAD200056A50F /* StackOverflowUITests */,
@@ -116,6 +154,7 @@
 		70989FB71D4FAD200056A50F /* StackOverflow */ = {
 			isa = PBXGroup;
 			children = (
+				707DDA441D511A7F00F57408 /* Model */,
 				70989FF71D5036300056A50F /* Global */,
 				70989FF81D5036410056A50F /* Controller */,
 				70989FF91D50364D0056A50F /* View */,
@@ -171,8 +210,6 @@
 				70989FEF1D4FBA090056A50F /* QuestionSearchViewController.m */,
 				70989FF11D4FBA1B0056A50F /* UserQuestionsViewController.h */,
 				70989FF21D4FBA1B0056A50F /* UserQuestionsViewController.m */,
-				70989FBE1D4FAD200056A50F /* ViewController.h */,
-				70989FBF1D4FAD200056A50F /* ViewController.m */,
 				70989FF41D4FD3510056A50F /* WebOAuthViewController.h */,
 				70989FF51D4FD3510056A50F /* WebOAuthViewController.m */,
 			);
@@ -199,8 +236,12 @@
 		70989FFB1D50368C0056A50F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				707DDA411D510B6B00F57408 /* StackOverflowService.h */,
+				707DDA421D510B6B00F57408 /* StackOverflowService.m */,
 				70989FFC1D5036C60056A50F /* KeychainHelper.h */,
 				70989FFD1D5036C60056A50F /* KeychainHelper.m */,
+				707DDA4B1D511EB400F57408 /* JSONParser.h */,
+				707DDA4C1D511EB400F57408 /* JSONParser.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -215,6 +256,7 @@
 				70989FB11D4FAD200056A50F /* Sources */,
 				70989FB21D4FAD200056A50F /* Frameworks */,
 				70989FB31D4FAD200056A50F /* Resources */,
+				707DDA3F1D51051B00F57408 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -335,14 +377,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				707DDA4A1D511AE700F57408 /* User.m in Sources */,
 				70989FF61D4FD3510056A50F /* WebOAuthViewController.m in Sources */,
 				70989FED1D4FAD940056A50F /* BurgerMenuViewController.m in Sources */,
 				70989FF31D4FBA1B0056A50F /* UserQuestionsViewController.m in Sources */,
-				70989FC01D4FAD200056A50F /* ViewController.m in Sources */,
 				70989FBD1D4FAD200056A50F /* AppDelegate.m in Sources */,
 				70989FF01D4FBA090056A50F /* QuestionSearchViewController.m in Sources */,
+				707DDA4D1D511EB400F57408 /* JSONParser.m in Sources */,
 				70989FBA1D4FAD200056A50F /* main.m in Sources */,
+				707DDA471D511A9E00F57408 /* Question.m in Sources */,
 				70989FFE1D5036C60056A50F /* KeychainHelper.m in Sources */,
+				707DDA431D510B6B00F57408 /* StackOverflowService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +530,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StackOverflow",
+				);
 				INFOPLIST_FILE = StackOverflow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Moore-and-Daughters.StackOverflow";
@@ -496,6 +545,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StackOverflow",
+				);
 				INFOPLIST_FILE = StackOverflow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Moore-and-Daughters.StackOverflow";
@@ -568,6 +621,7 @@
 				70989FE41D4FAD200056A50F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70989FE51D4FAD200056A50F /* Build configuration list for PBXNativeTarget "StackOverflowTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +630,7 @@
 				70989FE71D4FAD200056A50F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70989FE81D4FAD200056A50F /* Build configuration list for PBXNativeTarget "StackOverflowUITests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +639,7 @@
 				70989FEA1D4FAD200056A50F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

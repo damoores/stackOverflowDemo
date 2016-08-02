@@ -117,8 +117,42 @@
                     <view key="view" contentMode="scaleToFill" id="EyL-JR-8jC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4uK-Di-Lzt">
+                                <rect key="frame" x="0.0" y="70" width="600" height="530"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="questionCell" textLabel="fY2-Aw-Cc8" style="IBUITableViewCellStyleDefault" id="p47-kd-t4c">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p47-kd-t4c" id="uLa-5f-DO7">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fY2-Aw-Cc8">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4uK-Di-Lzt" secondAttribute="trailing" id="INX-VE-U2k"/>
+                            <constraint firstItem="4uK-Di-Lzt" firstAttribute="leading" secondItem="EyL-JR-8jC" secondAttribute="leading" id="LbV-Ek-YbW"/>
+                            <constraint firstItem="uIn-GI-tHZ" firstAttribute="top" secondItem="4uK-Di-Lzt" secondAttribute="bottom" id="PQB-ng-hqj"/>
+                            <constraint firstItem="4uK-Di-Lzt" firstAttribute="top" secondItem="Yhw-HC-d7Z" secondAttribute="bottom" constant="50" id="oZx-Pg-Jf5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="4uK-Di-Lzt" id="dY7-Lh-G5h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uL-l3-wBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
