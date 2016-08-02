@@ -31,17 +31,18 @@
 - (void) saveToken:(NSString *)token
 {
     NSData *secret = [token dataUsingEncoding:NSUTF8StringEncoding];
-    NSMutableDictionary *query = [NSMutableDictionary dictionary];
-    query[(__bridge id)kSecClass] = (__bridge id)kSecClassGenericPassword;
-    query[(__bridge id)kSecAttrService] = @"StackOverflow";
-    query[(__bridge id)kSecAttrAccount] = @"JohnDoe";
+    NSDictionary *query = @{
+                                   (id)kSecClass: (id)kSecClassGenericPassword,
+                                   (id)kSecAttrService: @"StackOverflow",
+                                   (id)kSecAttrAccount: @"JohnDoe",
+                                   (id)kSecValueData: secret,
+                                   };
 
 
     OSStatus status = SecItemCopyMatching((CFDictionaryRef)query, NULL);
     if (status == noErr) {
         NSLog(@"Token is already in keychain");
     } else {
-        query[(__bridge id)kSecValueData] = secret;
 
         OSStatus status = SecItemAdd((CFDictionaryRef)query, nil);
         if (status == noErr) {
@@ -54,13 +55,12 @@
 
 - (NSString *) getToken
 {
-    NSMutableDictionary *query = [NSMutableDictionary dictionary];
-  
-    query[(__bridge id)kSecClass] = (__bridge id)kSecClassGenericPassword;
-    query[(__bridge id)kSecAttrService] = @"StackOverflow";
-    query[(__bridge id)kSecAttrAccount] = @"JohnDoe";
-    query[(__bridge id)kSecReturnData] = (__bridge id)kCFBooleanTrue;
-    query[(__bridge id)kSecReturnAttributes] = (__bridge id)kCFBooleanTrue;
+    NSDictionary *query = @{
+                            (id)kSecClass: (id)kSecClassGenericPassword,
+                            (id)kSecAttrService: @"StackOverflow",
+                            (id)kSecAttrAccount: @"JohnDoe",
+                            (id)kSecReturnData: (id)kCFBooleanTrue,
+                            (id)kSecReturnAttributes: (id)kCFBooleanTrue,                            };
 
     CFDictionaryRef result = nil;
 
